@@ -1,0 +1,18 @@
+version: "3"  
+services:  
+  client:  
+    container_name: client  
+    build:  
+      context: .  
+      dockerfile: DockerfileClient 
+    image: jeonbok/react-map  
+    ports:  
+      - "80:3000"  
+  server:  
+      container_name: server  
+      build:  
+        context: .  
+        dockerfile: DockerfileServer  
+      image: jeonbok/express-server  
+      ports: 
+       - "4000:4000"
