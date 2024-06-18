@@ -144,7 +144,7 @@ class KakaoMap extends Component {
                             infowindow.close();
                         };
                     }
-
+ 
                 })
                 .catch((err) => console.log('에러: ' + err + '때문에 접속할 수 없습니다.')); //.then함수 끝 추가.위 기존 코드 중략 부분 중 positions 변수부분지운다.
 
